@@ -1,0 +1,19 @@
+x-hugo-image: &hugo-image ghcr.io/gohugoio/hugo:v0.161.1
+
+services:
+  hugo:
+    image: *hugo-image
+    command: server --bind 0.0.0.0 --buildDrafts --disableFastRender
+    ports:
+      - "1313:1313"
+    volumes:
+      - ./williamblack-dev:/project
+    working_dir: /project
+
+  hugo-init:
+    image: *hugo-image
+    profiles: ["init"]
+    command: new site williamblack-dev
+    volumes:
+      - .:/project
+    working_dir: /project
