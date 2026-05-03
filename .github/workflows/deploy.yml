@@ -1,8 +1,19 @@
 name: deploy
 
 on:
+  pull_request:
+    paths:
+      - '.github/workflows/deploy.yml'
+      - 'Makefile'
+      - '.hugo_version'
+      - 'williamblack-dev/**'
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/deploy.yml'
+      - 'Makefile'
+      - '.hugo_version'
+      - 'williamblack-dev/**'
   workflow_dispatch:
 
 permissions:
@@ -23,15 +34,18 @@ jobs:
         run: make build
 
       - name: Auth to GCP
+        if: github.event_name == 'push'
         uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3.0.0
         with:
           workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
           service_account: gha-deploy@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com
 
       - name: Set up gcloud
+        if: github.event_name == 'push'
         uses: google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db # v3.0.1
 
       - name: Sync to GCS
+        if: github.event_name == 'push'
         run: |
           gcloud storage rsync williamblack-dev/public/ gs://${{ secrets.WEBSITE_BUCKET_NAME }}/ \
             --recursive --delete-unmatched-destination-objects
