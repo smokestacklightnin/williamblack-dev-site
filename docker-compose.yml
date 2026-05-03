@@ -1,4 +1,4 @@
-x-hugo-image: &hugo-image ghcr.io/gohugoio/hugo:v0.161.1
+x-hugo-image: &hugo-image ${HUGO_IMAGE}
 
 services:
   hugo:
