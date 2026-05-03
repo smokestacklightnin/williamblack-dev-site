@@ -1,3 +1,3 @@
 baseURL = 'https://www.williamblack.dev/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'William Black'
