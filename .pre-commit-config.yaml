@@ -20,3 +20,8 @@ repos:
       - id: djlint-golang
         types_or: [html]
         files: \.html$
+
+  - repo: https://github.com/mrtazz/checkmake
+    rev: 59931d556f8f5cf4fbacf2c8390a8122ef7a881d  # v0.3.2
+    hooks:
+      - id: checkmake
