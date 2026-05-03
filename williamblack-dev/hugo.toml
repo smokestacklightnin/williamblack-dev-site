@@ -1,3 +1,4 @@
 baseURL = 'https://www.williamblack.dev/'
 locale = 'en-us'
 title = 'William Black'
+disableKinds = ['taxonomy', 'term', 'rss']
