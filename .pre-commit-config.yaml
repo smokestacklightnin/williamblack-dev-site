@@ -18,4 +18,5 @@ repos:
     rev: v1.36.4
     hooks:
       - id: djlint-golang
+        types_or: [html]
         files: \.html$
