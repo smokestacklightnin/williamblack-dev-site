@@ -26,7 +26,7 @@ Scikit-Learn · NumPy/SciPy/Pandas · Jupyter · Spark · ETL ·
 Supervised, Unsupervised & Reinforcement Learning · Model Evaluation
 
 **Reproducibility & Reliability** -- CI/CD (GitHub Actions) · Hermetic Builds ·
-Pinned Deps (uv, Poetry, Conda) · Unit/Integration/E2E/Property Tests ·
+Pinned Deps (uv, Pixi, Poetry, Conda) · Unit/Integration/E2E/Property Tests ·
 Pre-commit & Static Analysis · Monitoring & Incident Response · SemVer Releases
 
 ## Education
