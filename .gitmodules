@@ -1,0 +1,3 @@
+[submodule "williamblack-dev/themes/hugo-coder"]
+	path = williamblack-dev/themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
