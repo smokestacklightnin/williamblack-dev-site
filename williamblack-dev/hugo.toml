@@ -1,4 +1,68 @@
-baseURL = 'https://www.williamblack.dev/'
-locale = 'en-us'
-title = 'William Black'
-disableKinds = ['taxonomy', 'term', 'rss']
+baseURL = "https://www.williamblack.dev/"
+title = "William Black"
+theme = "hugo-coder"
+locale = "en-us"
+defaultContentLanguage = "en"
+enableEmoji = true
+disableKinds = ["taxonomy", "term", "rss"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[params]
+  author = "William Black"
+  description = "William Black -- Software & AI Engineer shipping reliable, reproducible Python, Go, AI/ML, and cloud-native systems."
+  keywords = "william black,software engineer,ai engineer,machine learning,python,go,kubernetes,open source"
+  info = ["Software & AI Engineer", "Python · Go · AI/ML · Cloud-Native"]
+  gravatar = "william@williamblack.dev"
+  dateFormat = "January 2, 2006"
+  since = 2026
+  commit = "https://github.com/smokestacklightnin/williamblack-dev-site/tree/"
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+  customCSS = []
+  customSCSS = []
+  customJS = []
+  customRemoteJS = []
+
+# Cloudflare Web Analytics — uncomment and set the token from
+# Cloudflare dashboard → Analytics & Logs → Web Analytics → your site → JS snippet.
+# [params.cloudflare]
+#   token = "REPLACE_WITH_TOKEN"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/smokestacklightnin"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/william-b-111150178"
+
+[[params.social]]
+  name = "Email"
+  icon = "fa-solid fa-envelope fa-2x"
+  weight = 3
+  url = "mailto:william@williamblack.dev"
+
+[languages.en]
+  label = "English"
+
+[[languages.en.menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+
+[[languages.en.menu.main]]
+  name = "Experience"
+  weight = 2
+  url = "experience/"
+
+[[languages.en.menu.main]]
+  name = "Contact"
+  weight = 3
+  url = "contact/"
