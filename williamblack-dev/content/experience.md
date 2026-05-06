@@ -8,6 +8,8 @@ slug = "experience"
 
 *Remote* · March 2024 – May 2026
 
+- Delivered both **internal platform work and client-facing engagements**,
+  partnering directly with customers on requirements, scoping, and delivery.
 - Led production **Python, AI/ML, and cloud-native** projects end-to-end,
   owning architecture, automated testing, and reproducible deployment on
   **Linux/Kubernetes**.
