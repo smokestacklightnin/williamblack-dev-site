@@ -12,9 +12,9 @@ slug = "experience"
   owning architecture, automated testing, and deployment on
   **Linux/Kubernetes**.
 - Hardened release pipelines and containerized developer environments
-  with **pinned dependencies, hermetic builds**, and
-  pre-commit/static-analysis gates, producing deterministic **CI/CD**
-  workflows across local, CI, and production.
+  with **pinned dependencies** and pre-commit/static-analysis gates,
+  producing deterministic **CI/CD** workflows across local, CI, and
+  production.
 - Delivered **Terraform, OpenTofu, and Pulumi** IaC for internal
   platforms and client projects, defining environments and standardizing
   provisioning across teams.
