@@ -63,6 +63,11 @@ disableKinds = ["taxonomy", "term", "rss"]
   url = "experience/"
 
 [[languages.en.menu.main]]
-  name = "Contact"
+  name = "Projects"
   weight = 3
+  url = "projects/"
+
+[[languages.en.menu.main]]
+  name = "Contact"
+  weight = 4
   url = "contact/"
